@@ -28,6 +28,15 @@ module.exports = {
       }
     },
     `gatsby-plugin-sass`,
-    `gatsby-plugin-typescript`
+    `gatsby-plugin-typescript`,
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        baseUrl: `www.passionside.com`,
+        protocol: `https`,
+        hostingWPCOM: false,
+        useACF: false
+      }
+    }
   ]
 };
